@@ -13,5 +13,5 @@
     int num;
     printf("Enter a Number: ");
     scanf("%d",&num);
-    printf("The factorial of %d id %d", num, factorial(num));
+    printf("The factorial of %d id %u", num, factorial(num));
  }
