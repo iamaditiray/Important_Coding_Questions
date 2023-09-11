@@ -1,15 +1,13 @@
 #include<stdio.h>
 #include<math.h>
-#define PI 3.141
-
-float area(float radius){
-    return PI * pow(radius, 2);
+int noOfShops(int i, int L){
+    int N=0;
+    for(int a=L; a>=i; a--){
+        N=N+(1*pow(2, (a-1)));
+    }
+    return N;
 }
 
 int main(){
-    float diameter;
-    printf("Enter diameter of a circle: ");
-    scanf("%f", &diameter);
-    float radius=(float)diameter/2;
-    printf("Area of the circle is %.2f", area(radius));
+    printf("Maximum number of steps are %d", noOfShops(1,2));
 }
